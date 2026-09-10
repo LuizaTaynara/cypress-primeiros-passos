@@ -52,14 +52,14 @@ describe('Aprendendo conceitos Cypress', () => {
 
   });
 
-  it('5 - Acessando página de produtos - usando intercept', () => {
+  it.only('5 - Acessando página de produtos - usando intercept', () => {
     cy.visit('/');
     cy.intercept('GET','products');
     cy.get('.navbar-nav').contains('Products').click();
     //cy.get('a[href="/products"]').contains('Products').click();
   });
 
-  it.only('6 - GET Produtos - usando request', () => {
+  it('6 - GET Produtos - usando request', () => {
    
     cy.request('GET', 'api/productsList');
     

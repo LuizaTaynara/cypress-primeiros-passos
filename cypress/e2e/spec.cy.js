@@ -52,7 +52,7 @@ describe('Aprendendo conceitos Cypress', () => {
 
   });
 
-  it.only('5 - Acessando página de produtos - usando intercept', () => {
+  it('5 - Acessando página de produtos - usando intercept', () => {
     cy.visit('/');
     cy.intercept('GET','products');
     cy.get('.navbar-nav').contains('Products').click();

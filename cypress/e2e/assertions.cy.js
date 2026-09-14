@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 describe('Aprendendo conceitos Cypress com Assertions', () => {
 
   it('1 - Usuário faz login com username e senha inválidos', () => {
@@ -101,7 +101,7 @@ describe('Aprendendo conceitos Cypress com Assertions', () => {
    
   });
 
-  it.only('6 - GET Produtos retorna 200 - usando request', () => {
+  it('6 - GET Produtos retorna 200 - usando request', () => {
    
     cy.request('GET', 'api/productsList').should((response)=>{
       expect(response.status).to.be.eq(200);

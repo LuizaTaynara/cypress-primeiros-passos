@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 describe('Testando Registro de Usuário', () => {
 
   it('1 - Usuário faz registro com username e senha válidos', () => {

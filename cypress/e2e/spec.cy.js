@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 describe('Aprendendo conceitos Cypress', () => {
 
   it('1 - Usuário faz login com username e senha inválidos', () => {
